@@ -1,32 +1,35 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { BookService } from './book.service';
+import { StashService } from './stash.service';
 import { AppComponent } from './app.component';
-import { BookComponent } from './book/book.component';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
-import { BookDetailComponent } from './book-detail/book-detail.component';
-import { BookCreateComponent } from './book-create/book-create.component';
-import { BookEditComponent } from './book-edit/book-edit.component';
+import { StashComponent } from './stash/stash.component';
+import { StashDetailComponent } from './stash-detail/stash-detail.component';
+import { StashCreateComponent } from './stash-create/stash-create.component';
+import { StashEditComponent } from './stash-edit/stash-edit.component';
 
 const ROUTES = [
-  { path: '', redirectTo: 'books', pathMatch: 'full' },
-  { path: 'books', component: BookComponent },
-  { path: 'book-details/:id', component: BookDetailComponent },
-  { path: 'book-create', component: BookCreateComponent },
-  { path: 'book-edit/:id', component: BookEditComponent }, 
-  { path: 'book-edit/:id', component: BookEditComponent }
+  { path: '', redirectTo: 'stash', pathMatch: 'full' },
+  { path: 'stash', component: StashComponent },
+  { path: 'stash-details/:id', component: StashDetailComponent },
+  { path: 'stash-create', component: StashCreateComponent },
+  { path: 'stash-edit/:id', component: StashEditComponent }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    BookComponent,
-    BookDetailComponent,
-    BookCreateComponent,
-    BookEditComponent
+    StashComponent,
+    StashDetailComponent,
+    StashCreateComponent,
+    StashEditComponent,
+    StashComponent,
+    StashDetailComponent,
+    StashCreateComponent,
+    StashEditComponent
   ],
   imports: [
     BrowserModule,
@@ -35,9 +38,10 @@ const ROUTES = [
     RouterModule.forRoot(ROUTES)
   ],
   providers: [
-    BookService,
+    StashService,
     {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

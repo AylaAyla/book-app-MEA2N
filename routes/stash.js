@@ -1,43 +1,43 @@
 var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
-var Book = require('../models/Book.js');
+var Stash = require('../models/Stash.js');
 
 /* GET ALL BOOKS */
 router.get('/', function(req, res, next) {
-    Book.find(function(err, products) {
+    Stash.find(function(err, products) {
         if (err) return next(err);
         res.json(products);
     });
 });
 
-/* GET SINGLE BOOK BY ID */
+/* GET SINGLE STASH ITEM BY ID */
 router.get('/:id', function(req, res, next) {
-    Book.findById(req.params.id, function(err, post) {
+    Stash.findById(req.params.id, function(err, post) {
         if (err) return next(err);
         res.json(post);
     });
 });
 
-/* SAVE BOOK */
+/* SAVE STASH */
 router.post('/', function(req, res, next) {
-    Book.create(req.body, function(err, post) {
+    Stash.create(req.body, function(err, post) {
         if (err) return next(err);
         res.json(post);
     });
 });
 
-/* UPDATE BOOK */
+/* UPDATE STASH */
 router.put('/:id', function(req, res, next) {
-    Book.findByIdAndUpdate(req.params.id, req.body, function(err, post) {
+    Stash.findByIdAndUpdate(req.params.id, req.body, function(err, post) {
         if (err) return next(err);
         res.json(post);
     });
 });
 
-/* DELETE BOOK */
+/* DELETE STASH */
 router.delete('/:id', function(req, res, next) {
-    Book.findByIdAndRemove(req.params.id, req.body, function(err, post) {
+    Stash.findByIdAndRemove(req.params.id, req.body, function(err, post) {
         if (err) return next(err);
         res.json(post);
     });
