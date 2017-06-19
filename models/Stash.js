@@ -1,12 +1,12 @@
 var mongoose = require('mongoose');
 
 var StashSchema = new mongoose.Schema({
-    isbn: String,
+    project: String,
     title: String,
-    author: String,
-    publisher: String,
+    client: String,
+    user: String,
     published_date: Date,
-    price: Number,
+    amount: Number,
     updated_at: { type: Date, default: Date.now },
 });
 
