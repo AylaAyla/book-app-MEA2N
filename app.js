@@ -5,11 +5,12 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var stash = require('./routes/stash');
+var app = express();
 
 mongoose.Promise = global.Promise;
 
 mongoose.connect('mongodb://localhost/stash-app')
-    .then(() => console.log('connection successful'))
+    .then(() => console.log('connection successful! localhost:' + app.get('port')))
     .catch((err) => console.error(err));
 
 var app = express();

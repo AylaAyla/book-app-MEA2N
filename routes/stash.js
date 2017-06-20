@@ -3,7 +3,7 @@ var router = express.Router();
 var mongoose = require('mongoose');
 var Stash = require('../models/Stash.js');
 
-/* GET ALL BOOKS */
+/* GET COMPLETE STASH */
 router.get('/', function(req, res, next) {
     Stash.find(function(err, products) {
         if (err) return next(err);

@@ -1,5 +1,6 @@
 var mongoose = require('mongoose');
 
+// Create schema
 var StashSchema = new mongoose.Schema({
     project: String,
     title: String,
@@ -10,4 +11,5 @@ var StashSchema = new mongoose.Schema({
     updated_at: { type: Date, default: Date.now },
 });
 
+//Export model with schema
 module.exports = mongoose.model('Stash', StashSchema);
