@@ -8,7 +8,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 2. Run npm install
 3. Run ng build
 4. Run nodemon
-5. #localhost://3000
+5. Go to `localhost://3000`
 
 
 ## Running unit tests
