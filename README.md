@@ -4,11 +4,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-#Clone Repository: `https://github.com/AylaAyla/book-app-MEA2N.git`
-#Run npm install
-#Run ng build
-#Run nodemon
-#localhost://3000
+1. Clone Repository: `https://github.com/AylaAyla/book-app-MEA2N.git`
+2. Run npm install
+3. Run ng build
+4. Run nodemon
+5. #localhost://3000
 
 
 ## Running unit tests
