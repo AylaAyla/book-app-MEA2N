@@ -1,5 +1,4 @@
-<div class="container">
-    <h1>Stash More</h1>
+<div class="container" *ngIf="showId">
     <div class="row">
         <div class="col-md-6">
             <form (ngSubmit)="saveStash()" #stashForm="ngForm">

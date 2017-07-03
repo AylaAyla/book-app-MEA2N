@@ -13,6 +13,8 @@ export class StashCreateComponent implements OnInit {
 
 constructor(private stashService: StashService, private router: Router) { }
 
+  showId = false;
+  
   ngOnInit() {
   }
 
@@ -23,6 +25,9 @@ constructor(private stashService: StashService, private router: Router) { }
     }, (err) => {
       console.log(err);
     });
+  }
+  toggleId(){
+    this.showId = !this.showId;
   }
 
 }

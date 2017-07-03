@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { StashService } from '../stash.service';
 
 
@@ -14,6 +14,7 @@ export class StashComponent implements OnInit {
 
   constructor(private StashService: StashService) { }  
 
+
   ngOnInit() {
     this.getStashList();
   }
@@ -25,4 +26,8 @@ export class StashComponent implements OnInit {
       console.log(err);
     });
   }
+
+  @ViewChild('child') child;
+
+
 }
