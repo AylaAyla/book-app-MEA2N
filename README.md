@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-1. Clone Repository: [https://github.com/AylaAyla/book-app-MEA2N.git](https://github.com/AylaAyla/book-app-MEA2N.git)
+1. Clone Repository: `git clone https://github.com/AylaAyla/book-app-MEA2N.gi https://github.com/AylaAyla/book-app-MEA2N.git`
 2. Run `npm install`
 3. Run `ng build`
 4. Run `nodemon`
