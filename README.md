@@ -10,7 +10,7 @@
 6. Go to [localhost://3000](http://localhost:3000/)
 
 #### Goal of project:
- become more aquainted with Angular2
+Become more aquainted with Angular2 (success)
 
 #### More Information about project
 This is an application designed to help store and organize financial documents. 
