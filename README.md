@@ -1,12 +1,10 @@
-# Stash-App
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.1.
-
+# Stash-App This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.1.  
 ## Development server
 
 1. Clone Repository: `git clone https://github.com/AylaAyla/book-app-MEA2N.git`
 2. Run `npm install`
-3. Run `ng build`
+   Run `mongod`(in seperate console tab)
+3. Run `ng build` 
 4. Run `nodemon`
 5. Go to [localhost://3000](http://localhost:3000/)
 
