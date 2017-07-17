@@ -12,6 +12,13 @@
 #### Goal of project:
  become more aquainted with Angular2
 
+#### More Information about project
+An application designed to help store and organize financial documents. 
+
+This project is still in progress. Right now it is a basic CRUD application. You are able to create, add, delete, edit a list of input text. 
+
+The next phase would be to add a search component, along with the ability to add and retrieve documents in the stash. 
+ 
 
 ## Running unit tests
 
